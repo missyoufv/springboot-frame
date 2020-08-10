@@ -12,7 +12,9 @@
 
     <groupId>cn.duw.frame</groupId>
     <artifactId>springboot-frame</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-frame</name>
+    <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>springboot-sentinel</module>
+    </modules>
 </project>
