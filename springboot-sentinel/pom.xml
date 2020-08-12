@@ -10,4 +10,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>springboot-sentinel</artifactId>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--sentinel-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <version>2.2.0.RELEASE</version>
+        </dependency>
+        <!--sentinel end-->
+
+    </dependencies>
 </project>
