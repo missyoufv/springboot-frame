@@ -25,14 +25,14 @@ public class DataSourceAspect {
     /**
      * 定义方法执行之前的切面信息
      *
-     * @param joinPoint
+     * @param
      */
     @Before(value = "@annotation(dataSourceSelector)")
-    public void before(JoinPoint joinPoint, DataSourceSelector dataSourceSelector) {
+    public void before(DataSourceSelector dataSourceSelector) {
         log.debug("------------------------------------------before dataSourceSelector -----------------------------");
         try {
-            DataSourceType dataSourceType = dataSourceSelector.value();
-            DataSourceContextHolder.setDbType(dataSourceType);
+            TargetDataSource targetDataSource = dataSourceSelector.value();
+            DataSourceContextHolder.setDbType(targetDataSource);
         } catch (Exception e) {
             log.error("current thread " + Thread.currentThread().getName() + "add data to ThreadLocal error!");
         }
@@ -41,10 +41,10 @@ public class DataSourceAspect {
     /**
      * 定义方法执行之后的切面信息
      *
-     * @param joinPoint
+     * @param
      */
     @After(value = "@annotation(DataSourceSelector)")
-    public void after(JoinPoint joinPoint) {
+    public void after() {
         log.debug("------------------------------------------after dataSourceSelector -----------------------------");
         DataSourceContextHolder.clearDbType();
     }

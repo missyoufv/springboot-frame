@@ -3,15 +3,14 @@ package cn.duw.frame.datasource;
 /**
  * 数据源类型
  */
-public enum DataSourceType {
+public enum TargetDataSource {
 
     LOCAL("local"),
-    TEST("test"),
-    PROD("prod");
+    RECOMMEND("recommend");
 
     private String type;
 
-    DataSourceType(String type) {
+    TargetDataSource(String type) {
         this.type = type;
     }
 

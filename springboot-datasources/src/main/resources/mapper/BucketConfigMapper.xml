@@ -10,4 +10,18 @@
         where id = #{id}
     </delete>
 
+    <select id="query" resultType="cn.duw.frame.entity.BucketConfig">
+        select * from m_bucket_config
+        where id = #{id}
+
+    </select>
+
+    <insert id="save">
+        insert into
+          m_bucket_config
+        (tail, tab_channel, algorithm, algo_version, family_name, `type`, `table_name`, use_channel, `status`)
+        values
+        (#{tail}, #{tabChannel}, #{algorithm}, #{algoVersion}, #{familyName}, #{type}, #{tableName}, #{useChannel},
+        #{status})
+    </insert>
 </mapper>

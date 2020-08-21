@@ -1,5 +1,6 @@
 package cn.duw.frame.mapper;
 
+import cn.duw.frame.entity.BucketConfig;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
@@ -10,6 +11,10 @@ public interface BucketConfigMapper {
      * @param id
      * @return
      */
-    int delete(Long id);
+    int delete(Integer id);
 
+
+    BucketConfig query(long id);
+
+    void save(BucketConfig bucketConfig);
 }

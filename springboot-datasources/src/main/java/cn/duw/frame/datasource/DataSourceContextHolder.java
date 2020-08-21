@@ -14,7 +14,7 @@ public class DataSourceContextHolder {
      * 设置数据源类型
      * @param dataSourceType
      */
-    public static void setDbType(DataSourceType dataSourceType) {
+    public static void setDbType(TargetDataSource dataSourceType) {
         threadLocal.set(dataSourceType.getType());
     }
 

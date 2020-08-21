@@ -16,5 +16,5 @@ public @interface DataSourceSelector {
      * 默认的是写库
      * @return
      */
-    DataSourceType value() default DataSourceType.LOCAL;
+    TargetDataSource value() default TargetDataSource.LOCAL;
 }
