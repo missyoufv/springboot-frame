@@ -16,5 +16,6 @@
 
     <modules>
         <module>springboot-sentinel</module>
+        <module>springboot-mq</module>
     </modules>
 </project>
