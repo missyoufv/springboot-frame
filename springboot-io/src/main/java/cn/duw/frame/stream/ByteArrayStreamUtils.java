@@ -2,7 +2,10 @@ package cn.duw.frame.stream;
 
 import cn.duw.frame.entity.Student;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 /**
  * 字节数组流
