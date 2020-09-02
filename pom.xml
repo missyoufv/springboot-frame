@@ -17,6 +17,7 @@
     <modules>
         <module>springboot-sentinel</module>
         <module>springboot-datasources</module>
+        <module>springboot-distribute</module>
     </modules>
 
     <dependencies>
