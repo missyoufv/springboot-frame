@@ -20,6 +20,7 @@
         <module>springboot-mq</module>
         <module>springboot-io</module>
         <module>springboot-distribute</module>
+        <module>springboot-juc</module>
     </modules>
 
     <dependencies>
